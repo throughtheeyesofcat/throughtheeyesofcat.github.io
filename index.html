@@ -1,10 +1,48 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title> Through the Eyes of Cat </title> 
+  <title>Through the Eyes of Cat</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/photoswipe.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="js/klass.min.js"></script>
+  <script type="text/javascript" src="js/photoswipe.js"></script>
+  
+  <script type="text/javascript">
+    (function(window, PhotoSwipe){
+      document.addEventListener('DOMContentLoaded', function(){ 
+        var
+          options = {},
+          gallery1Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery1 a'), options ),
+          gallery2Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery2 a'), options ),
+          gallery3Instance = PhotoSwipe.attach(window.document.querySelectorAll('#Gallery3 a'), options );
+      }, false);
+    }(window, window.Code.PhotoSwipe));
+  </script>
+
 </head>
 <body>
-	<div id="header">
-		<h1> The world through the eyes of Cat Nitta </h1>
-	</div>
+<div>
+      <a href="http://throughtheeyesofcat.github.io"><img src="images/website_logo.jpg" width="120" height="96" alt="Cat Nitta Photography" /></a> 
+</div>
+  <nav>
+    <a href="mailto:nittac@berkeley.edu"><img src="logo/email.png" width="32" height="32"/></a>
+    <a href="https://www.instagram.com/onekitcat/"><img src="logo/insta.png" width="32" height="32"/></a>
+    <ul>
+      <li><a href="animal.html">Animals</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="urban.html">Urban </br>Landscapes</a></li>
+    </ul>
+  </nav>
+  <p><small>The world </br>through the eyes</br> of Cat Nitta</br> </br>&copy; <a href="http://ni-tta.github.io"> Catherine </br>Nitta</a>, 2016</small></p>
+
+
+
+  <div id="MainContent"> </div>
+  <div style="width:100%">
+  <img id="Landing" src="images/landing_page.jpg">  </div>
+</div>
+
 </body>
-</html> 
+</html>
