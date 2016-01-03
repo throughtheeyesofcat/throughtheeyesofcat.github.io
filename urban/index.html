@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Urban Landscapes | Cat Nitta Photography</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+		body {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="../img/photo_logo.gif" alt="Cat Nitta Photography"/></a>
+		</div>
+
+		<div id="menu_icon"></div>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../animals/index.html">Animals</a></li>
+				<li><a href="../food/index.html">Food</a></li>
+				<li><a href="../urban/index.html" class="selected">Urban Landscapes</a></li>
+			</ul>
+		</nav>
+
+		<div class="footer clearfix">
+			<ul class="social clearfix">
+				<li><a href="mailto:nittac@berkeley.edu" class="email" data-title="Email"></a></li>
+				<li><a href="http://instagram.com/onekitcat" class="instagram" data-title="Instagram"></a></li>
+				<!--<li><a href="#" class="facebook" data-title="Facebook"></a></li>
+				<li><a href="#" class="twitter" data-title="Twitter"></a></li>
+				<li><a href="#" class="linkedin" data-title="LinkedIn"></a></li>
+				<li><a href="#" class="github" data-title="Github"></a></li>
+                <li><a href="#" class="deviantart" data-title="DeviantArt"></a></li> -->
+			</ul>
+
+			<div class="rights">
+				<p>Copyright © 2016</p>
+				<p><a href="http://ni-tta.github.io">Catherine Nitta</a></p>
+			</div>
+		</div >
+	</header>
+	<div id="lightbox">
+	<p>
+		<a class="fancybox" href="outdoors0.jpg" data-fancybox-group="gallery" title="The sun bursts out of the dark rain clouds (Marina Del Rey, CA)."><img src="od0tn.jpg" alt="" /></a>
+
+		<a class="fancybox" href="outdoors1.jpg" data-fancybox-group="gallery" title="The sun rises over Berkeley, observed from Charter Hill, also colloquially known as the Big C (Berkeley, CA)."><img src="od1tn.jpg" alt="" /></a>
+
+		<a class="fancybox" href="outdoors2.jpg" data-fancybox-group="gallery" title="The bear exhibit was temporily unoccupied (San Diego Zoo, CA)."><img src="od2tn.jpg" alt="" /></a>
+
+		<a class="fancybox" href="outdoors3.jpg" data-fancybox-group="gallery" title="The high-rise buildings block the morning sun from the street (San Francisco, CA)."><img src="od3tn.jpg" alt="" /></a>
+
+		<a class="fancybox" href="outdoors4.jpg" data-fancybox-group="gallery" title="Visitors are undeterred from the Stonehenge on this rainy summer day (Amesbury, Wiltshire, United Kingdom)."><img src="od4tn.jpg" alt="" /></a>
+
+		<a class="fancybox" href="outdoors5.jpg" data-fancybox-group="gallery" title="The first sunrise of the year (2016), as viewed from Indian Rock Park (Berkeley, CA)."><img src="od5tn.jpg" alt="" /></a>
+
+		<a class="fancybox" href="outdoors6.jpg" data-fancybox-group="gallery" title="Imagining what ski jumpers see, but without snow (Okurayama Jump Stadium, Chuo-ku, Sapporo, Hokkaido, Japan)."><img src="od6tn.jpg" alt="" /></a>
+
+		<a class="fancybox" href="outdoors7.jpg" data-fancybox-group="gallery" title="A rainy summer's day in Bristol (Bristol, United Kingdom)."><img src="od7tn.jpg" alt="" /></a>
+	
+	</p>
+</div>
+	
+</body>
+</html>

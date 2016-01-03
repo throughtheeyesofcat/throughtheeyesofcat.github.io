@@ -1,48 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Through the Eyes of Cat</title>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <link href="css/photoswipe.css" type="text/css" rel="stylesheet" />
-  <script type="text/javascript" src="js/klass.min.js"></script>
-  <script type="text/javascript" src="js/photoswipe.js"></script>
-  
-  <script type="text/javascript">
-    (function(window, PhotoSwipe){
-      document.addEventListener('DOMContentLoaded', function(){ 
-        var
-          options = {},
-          gallery1Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery1 a'), options ),
-          gallery2Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery2 a'), options ),
-          gallery3Instance = PhotoSwipe.attach(window.document.querySelectorAll('#Gallery3 a'), options );
-      }, false);
-    }(window, window.Code.PhotoSwipe));
-  </script>
-
+	<title>Cat Nitta Photography</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-<div>
-      <a href="http://throughtheeyesofcat.github.io"><img src="images/website_logo.jpg" width="120" height="96" alt="Cat Nitta Photography" /></a> 
-</div>
-  <nav>
-    <a href="mailto:nittac@berkeley.edu"><img src="logo/email.png" width="32" height="32"/></a>
-    <a href="https://www.instagram.com/onekitcat/"><img src="logo/insta.png" width="32" height="32"/></a>
-    <ul>
-      <li><a href="animal.html">Animals</a></li>
-      <li><a href="food.html">Food</a></li>
-      <li><a href="urban.html">Urban </br>Landscapes</a></li>
-    </ul>
-  </nav>
-  <p><small>The world </br>through the eyes</br> of Cat Nitta</br> </br>&copy; <a href="http://ni-tta.github.io"> Catherine </br>Nitta</a>, 2016</small></p>
 
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="img/photo_logo.gif" alt="Cat Nitta Photography"/></a>
+		</div>
 
+		<div id="menu_icon"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="selected">Home</a></li>
+				<li><a href="animals/index.html">Animals</a></li>
+				<li><a href="food/index.html">Food</a></li>
+				<li><a href="urban/index.html">Urban Landscapes</a></li>
+			</ul>
+		</nav>
 
-  <div id="MainContent"> </div>
-  <div style="width:100%">
-  <img id="Landing" src="images/landing_page.jpg">  </div>
-</div>
+		<div class="footer clearfix">
+			<ul class="social clearfix">
+				<li><a href="mailto:nittac@berkeley.edu" class="email" data-title="Email"></a></li>
+				<li><a href="http://instagram.com/onekitcat" class="instagram" data-title="Instagram"></a></li>
+				<!--<li><a href="#" class="facebook" data-title="Facebook"></a></li>
+				<li><a href="#" class="twitter" data-title="Twitter"></a></li>
+				<li><a href="#" class="linkedin" data-title="LinkedIn"></a></li>
+				<li><a href="#" class="github" data-title="Github"></a></li>
+                <li><a href="#" class="deviantart" data-title="DeviantArt"></a></li> -->
+			</ul>
 
+			<div class="rights">
+				<p>Copyright © 2016</p>
+				<p><a href="http://ni-tta.github.io">Catherine Nitta</a></p>
+			</div>
+		</div >
+	</header>
+
+	<section class="main clearfix">
+		<div class="work">
+				<img src="img/landing_page.png" class="media" alt=""/>
+		</div> 
+    </section>
 </body>
 </html>
