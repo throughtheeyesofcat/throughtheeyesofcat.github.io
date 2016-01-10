@@ -163,90 +163,77 @@ code {
     line-height: 20px;
 }
 
-#menu .footer{
-        position: absolute;
-        padding-top: 100%;
-        padding-left: 20px;
-    }
 
-#menu .navbar-default .navbar-nav ul.social{
-        list-style: none;
-        margin-bottom: 5px;
-    }
+#menu .footer {
+    text-align: center;
+    padding-top: 100%;
+}
 
-#menu .navbar-default .navbar-nav ul.social li{
-        display: block;
-        float: left;
-        position: relative;
-        margin: 0 5px 5px 0;
-    }
+#menu .footer p{
+    font-size: 12px;
+    color:#000000;
+}
+#menu .footer a {
+    color:#000000;
+}
+#menu .footer a:hover{
+    color:#9859B6;
+}
 
+#menu .footer ul.social {
+   display:block;
+   list-style:none;
+}
 
-#menu .navbar-default .navbar-nav ul.social li a{
-        display: block;
-        width: 30px;
-        height: 30px;
-       background: url('images/sm_logos.png') no-repeat;
-        background-position: 0 0;
-    }
+#menu .footer ul.social li{
+    display:block;
+    float:left;
+    position:relative;
+    margin:0 5px 5px 0;
+}
 
+#menu ul.social li a{
+    display:block;
+    width:32px;
+    height:32px;
+    background-position:0 0;
+}
 
-#menu .navbar-default .navbar-nav ul.social li a:hover{
-        background: url('images/sm_logos_hover.png') no-repeat;
-    }
+#menu ul.social li a.mail{
+    display:block;
+    background-position:0 0;
+    background-image:url('images/mail.png');
+}
 
+#menu ul.social li a.mail:hover{
+    display:block;
+    background-position:0 0;
+    background-image:url('images/mail_hover.png');
+}
 
+#menu ul.social li a.fb{
+    display:block;
+    background-position:-32px 0;
+    background-image:url('images/fb.png');
+}
 
-    #menu .navbar-default .navbar-nav ul.social li a.email,
-    #menu .navbar-default .navbar-nav ul.social li a.email:hover{
-        background-position: 0 0;
-    }
+#menu ul.social li a.fb:hover{
+    display:block;
+    background-position:-32px 0;
+    background-image:url('images/fb_hover.png');
+}
 
+#menu ul.social li a.insta{
+    display:block;
+    background-position:-64px 0;
+    background-image:url('images/insta.png');
+}
 
-    #menu .navbar-default .navbar-nav ul.social li a.instagram,
-    #menu .navbar-default .navbar-nav ul.social li a.instagram:hover{
-        background-position: -32px 0;
-    }
-
-    #menu .navbar-default .navbar-nav ul.social li a.facebook,
-    #menu .navbar-default .navbar-nav ul.social li a.facebook:hover{
-        background-position: -64px 0;
-    }
-
-    #menu .navbar-default .navbar-nav ul.social li a.twitter,
-    #menu .navbar-default .navbar-nav ul.social li a.twitter:hover{
-        background-position: -96px 0;
-    }
-
-    #menu .navbar-default .navbar-nav ul.social li a.linkedin,
-    #menu .navbar-default .navbar-nav ul.social li a.linkedin:hover{
-        background-position: -130px 0;
-    }
-
-    #menu .navbar-default .navbar-nav ul.social li a.github,
-    #menu .navbar-default .navbar-nav ul.social li a.github:hover{
-        background-position: -160px 0;
-    }
-    
-    #menu .navbar-default .navbar-nav ul.social li a.deviantart,
-    #menu .navbar-default .navbar-nav ul.social li a.deviantart:hover{
-        background-position: -192px 0;
-    }
-
-
-    #menu .navbar-default .navbar-nav .rights p{
-        color: #454545;
-        font-family: "raleway-regular", arial;
-        font-size: 11px;
-        letter-spacing: 1px;
-        line-height: 10px;
-    }
-
-    #menu .navbar-default .navbar-nav .rights a{
-        font-family: "raleway-bold", arial;
-        font-weight: bold;
-        text-decoration: none;
-    }
+#menu ul.social li a.insta:hover{
+    display:block;
+    background-position:-64px 0;
+    background-image:url('images/insta_hover.png');
+}
 
 #container {
     position: relative;
@@ -269,13 +256,13 @@ code {
     margin-bottom: 40px;
 }
 .to-top-btn {
-    background: #9B9F9F;
     border-radius: 0;
     color: #fff;
     display: block;
     font-size: 18px;
     line-height: 38px;
     margin: 0 auto;
+    padding-left: 15px;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -289,7 +276,7 @@ code {
 .btn {
     border-radius: 0;
     padding: 8px 13px;
-    margin-right: 5px;
+    margin-right: 0px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -338,9 +325,8 @@ code {
 .about {
     width: 100%;
     height: 100%;
-    margin: 10px 0;
+    margin: 0px 0;
     text-align: center;
-/*    border: 1px solid #9859B6;*/
 }
 .about .about {
     border:1px solid #9859B6;
