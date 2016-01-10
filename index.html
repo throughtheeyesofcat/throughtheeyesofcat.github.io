@@ -9,12 +9,12 @@
     <title>Cat Nitta Photography</title>
 	
     <!--Library Styles-->    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/nivo-lightbox.css" rel="stylesheet">
-    <link href="css/default.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type='text/css'/>
+    <link href="css/font-awesome.css" rel="stylesheet" type='text/css'/>
+    <link href="css/nivo-lightbox.css" rel="stylesheet" type='text/css'/>
+    <link href="css/default.css" rel="stylesheet" type='text/css'/>
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type='text/css'/>
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -51,7 +51,7 @@
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a class="sscroll" href="#home">Home</a></li>
-                        <li><a class="sscroll" href="#services">About</a></li>
+                        <li><a class="sscroll" href="#about">About</a></li>
                         <li><a class="sscroll" href="#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
@@ -77,13 +77,15 @@
         
         <div id="container">
             <!-- BEGIN HOME -->
-            <section id="home" class="home" style="background-position: 50% 0px;"> 
-                <div class="bg-parallax screen-height" style="height: 628px;">	
+            <section id="home" class="home"> 
+                <div class="background">
+                    <img src="images/landing_page.png"/>
+                </div>	
             </section>
             <!-- END HOME -->
             
-            <!-- BEGIN SERVICES -->
-            <section id="services" class="services">
+            <!-- BEGIN ABOUT -->
+            <section id="about" class="about">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="header-content">
@@ -96,19 +98,19 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
+                                <div class="about">
                                     <img src="images/silver.jpg"/>
                                     <h3>Silver Nitrate</h3>
 				                </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
-                               <div class="service"> 
+                               <div class="about"> 
                                     <img src="images/hh.jpg"/>
                                     <h3>Photoshop</h3>
 				                </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
+                                <div class="about">
                                     <img src="images/lr.jpg"/>
                                     <h3>Lightroom</h3>
 				                </div>
@@ -117,7 +119,7 @@
                     </div>                   
                 </div>
             </section>
-            <!-- END SERVICES -->
+            <!-- END ABOUT -->
             
             <!-- BEGIN PORTFOLIO -->
             <section id="portfolio" class="portfolio">
