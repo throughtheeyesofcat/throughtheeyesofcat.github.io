@@ -165,7 +165,6 @@ code {
 
 
 #menu .footer {
-    display:inline-block;
     text-align: center;
     padding-top: 100%;
 }
@@ -181,10 +180,53 @@ code {
     color:#9859B6;
 }
 
-#menu .footer img:hover{
-    text-decoration: none; 
-    list-style: none;
-    background-image:url("images/mail_hover.png");
+#menu .footer ul.social {
+   display:block;
+   list-style:none;
+}
+
+#menu .footer ul.social li{
+    display:block;
+    float:left;
+    position:relative;
+    margin:0 5px 5px 0;
+}
+
+#menu ul.social li a{
+    display:block;
+    width:32px;
+    height:32px;
+    background-position:0 0;
+}
+
+#menu ul.social li a.mail{
+    background-position:0 0;
+    background:url('images/mail.png');
+}
+
+#menu ul.social li a.mail:hover{
+    background-position:0 0;
+    background:url('images/mail_hover.png');
+}
+
+#menu ul.social li a.fb{
+    background-position:-32px 0;
+    background:url('images/fb.png');
+}
+
+#menu ul.social li a.fb:hover{
+    background-position:-32px 0;
+    background:url('images/fb_hover.png');
+}
+
+#menu ul.social li a.insta{
+    background-position:-64px 0;
+    background:url('images/insta.png');
+}
+
+#menu ul.social li a.insta:hover{
+    background-position:-64px 0;
+    background:url('images/insta_hover.png');
 }
 
 #container {
@@ -208,13 +250,13 @@ code {
     margin-bottom: 40px;
 }
 .to-top-btn {
-    background: #9B9F9F;
     border-radius: 0;
     color: #fff;
     display: block;
     font-size: 18px;
     line-height: 38px;
     margin: 0 auto;
+    padding-left: 15px;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -228,7 +270,7 @@ code {
 .btn {
     border-radius: 0;
     padding: 8px 13px;
-    margin-right: 5px;
+    margin-right: 0px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
