@@ -200,33 +200,39 @@ code {
 }
 
 #menu ul.social li a.mail{
+    display:block;
     background-position:0 0;
-    background:url('images/mail.png');
+    background-image:url('images/mail.png');
 }
 
 #menu ul.social li a.mail:hover{
+    display:block;
     background-position:0 0;
-    background:url('images/mail_hover.png');
+    background-image:url('images/mail_hover.png');
 }
 
 #menu ul.social li a.fb{
+    display:block;
     background-position:-32px 0;
-    background:url('images/fb.png');
+    background-image:url('images/fb.png');
 }
 
 #menu ul.social li a.fb:hover{
+    display:block;
     background-position:-32px 0;
-    background:url('images/fb_hover.png');
+    background-image:url('images/fb_hover.png');
 }
 
 #menu ul.social li a.insta{
+    display:block;
     background-position:-64px 0;
-    background:url('images/insta.png');
+    background-image:url('images/insta.png');
 }
 
 #menu ul.social li a.insta:hover{
+    display:block;
     background-position:-64px 0;
-    background:url('images/insta_hover.png');
+    background-image:url('images/insta_hover.png');
 }
 
 #container {
