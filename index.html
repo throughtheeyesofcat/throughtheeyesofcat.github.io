@@ -1,53 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Cat Nitta Photography</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+    <link rel="icon" href="images/favi.png" type="image/x-icon">
+
+    <title>Cat Nitta Photography</title>
+	
+    <!--Library Styles-->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/nivo-lightbox.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
 
-	<header>
-		<div class="logo">
-			<a href="index.html"><img src="img/photo_logo.gif" alt="Cat Nitta Photography"/></a>
-		</div>
+<body data-spy="scroll">
 
-		<div id="menu_icon"></div>
-		<nav>
-			<ul>
-				<li><a href="index.html" class="selected">Home</a></li>
-				<li><a href="animals/index.html">Animals</a></li>
-				<li><a href="food/index.html">Food</a></li>
-				<li><a href="urban/index.html">Urban Landscapes</a></li>
-			</ul>
-		</nav>
+    <!-- Preloader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;"></div>
+    </div>
+	
+    <div id="main-wrapper">
+        
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <!--     <a class="navbar-brand" href="#home"> -->
+                        <img src="images/photo_logo.png" alt="logo">
+                <!--     </a> -->
+                </div>
 
-		<div class="footer clearfix">
-			<ul class="social clearfix">
-				<li><a href="mailto:nittac@berkeley.edu" class="email" data-title="Email"></a></li>
-				<li><a href="http://instagram.com/onekitcat" class="instagram" data-title="Instagram"></a></li>
-				<!--<li><a href="#" class="facebook" data-title="Facebook"></a></li>
-				<li><a href="#" class="twitter" data-title="Twitter"></a></li>
-				<li><a href="#" class="linkedin" data-title="LinkedIn"></a></li>
-				<li><a href="#" class="github" data-title="Github"></a></li>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="sscroll" href="#home">Home</a></li>
+                        <li><a class="sscroll" href="#services">About</a></li>
+                        <li><a class="sscroll" href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+                <div class="footer">
+                <ul class="social">
+                <li><a href="mailto:nittac@berkeley.edu" class="email" data-title="Email"></a></li>
+                <li><a href="http://instagram.com/onekitcat" class="instagram" data-title="Instagram"></a></li>
+                <!--<li><a href="#" class="facebook" data-title="Facebook"></a></li>
+                <li><a href="#" class="twitter" data-title="Twitter"></a></li>
+                <li><a href="#" class="linkedin" data-title="LinkedIn"></a></li>
+                <li><a href="#" class="github" data-title="Github"></a></li>
                 <li><a href="#" class="deviantart" data-title="DeviantArt"></a></li> -->
-			</ul>
+            </ul>
 
-			<div class="rights">
-				<p>Copyright © 2016</p>
-				<p><a href="http://ni-tta.github.io">Catherine Nitta</a></p>
-			</div>
-		</div >
-	</header>
+            <div class="rights">
+                <p>Copyright © 2016</p>
+                <p><a href="http://ni-tta.github.io">Catherine Nitta</a></p>
+            </div>
+        </div >
+            </nav>
+        </div>
+        
+        <div id="container">
+            <!-- BEGIN HOME -->
+            <section id="home" class="home" style="background-position: 50% 0px;"> 
+                <div class="bg-parallax screen-height" style="height: 628px;">	
+            </section>
+            <!-- END HOME -->
+            
+            <!-- BEGIN SERVICES -->
+            <section id="services" class="services">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>About</h2>
+                            <h3>Hi, I'm Catherine "Cat" Nitta. 
+                            </br>I'm a second year cognitive science major at UC Berkeley. </br>Photography is one of my hobbies.
+                            </br> Here are some of my photography skills.</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="service">
+                                    <img src="images/silver.jpg"/>
+                                    <h3>Silver Nitrate</h3>
+				                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                               <div class="service"> 
+                                    <img src="images/hh.jpg"/>
+                                    <h3>Photoshop</h3>
+				                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="service">
+                                    <img src="images/lr.jpg"/>
+                                    <h3>Lightroom</h3>
+				                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </section>
+            <!-- END SERVICES -->
+            
+            <!-- BEGIN PORTFOLIO -->
+            <section id="portfolio" class="portfolio">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <ul class="portfolioFilter text-center">
+                            <li data-filter="all" class="active">ALL</li>
+                            <li data-filter="animals">ANIMALS</li>
+                            <li data-filter="food">FOOD</li>
+                            <li data-filter="urban">URBAN LANDSCAPES</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 mg-bt-80">
+                        <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal1.jpg" data-lightbox-gallery="team-portfolio" title="This seagull flees the rising sun (Venice Beach, CA).">
+                                    <img src="images/tn/an1tn.jpg" alt="Click to Enlarge1">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal2.jpg" data-lightbox-gallery="team-portfolio" title="Seals sunbathe on the beach (La Jolla Beach, CA).">
+                                    <img src="images/tn/an2tn.jpg" alt="Click to Enlarge5">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal3.jpg" title="A seagull parent returns to its family's nest (La Jolla Beach, CA)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/an3tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                         <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item food mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/food1.jpg" data-lightbox-gallery="team-portfolio" title="A raw shrimp lies on a bed of daikon and shiso leaf, ready to be eaten. (Sapporo, Hokkaido, Japan).">
+                                    <img src="images/tn/food1tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item food mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/food2.jpg" data-lightbox-gallery="team-portfolio"title="Chinese-style karaage (Gifu, Japan).">
+                                    <img src="images/tn/food2tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item food mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/food3.jpg" title="Spilt salt on a worn cafe table (Palo Alto, CA)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/food3tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                         <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors0.jpg" data-lightbox-gallery="team-portfolio" title="The sun bursts out of the dark rain clouds (Marina Del Rey, CA).">
+                                    <img src="images/tn/od0tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors1.jpg" data-lightbox-gallery="team-portfolio" title="The sun rises over Berkeley, observed from Charter Hill, also colloquially known as the Big C (Berkeley, CA).">
+                                    <img src="images/tn/od1tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors2.jpg" title= "The bear exhibit was temporily unoccupied (San Diego Zoo, CA)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/od2tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                         <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal4.jpg" data-lightbox-gallery="team-portfolio" title="A polar bear family makes the most of their life in captivity (Maruyama Zoo, Chuo-ku, Sapporo, Hokkaido, Japan).">
+                                    <img src="images/tn/an4tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal5.jpg" data-lightbox-gallery="team-portfolio" title="This crocodile wonders who its next victim shall be (San Diego Zoo, San Diego, CA).">
+                                    <img src="images/tn/an5tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal6.jpg" title="An unusual creature, this okapi is bashful due to the sudden attention (San Diego Zoo, San Diego, CA)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/an6tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                         <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item food mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/food4.jpg" data-lightbox-gallery="team-portfolio" title="Freshly washed red grapes (Palo Alto, CA).">
+                                    <img src="images/tn/food4tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item food mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/food5.jpg" data-lightbox-gallery="team-portfolio" title="Genghis Khan, a Hokkaido speciality dish, being grilled at the table (Sapporo, Hokkaido, Japan).">
+                                    <img src="images/tn/food5tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item food mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/food6.jpg" title="Ready to eat (Sapporo, Hokkaido, Japan)!" data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/food6tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                            <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors3.jpg" data-lightbox-gallery="team-portfolio" title="A stained glass plate ft. the Okurayama Jump Stadium in the background (Okurayama Jump Stadium, Chuo-ku, Sapporo, Hokkaido, Japan).">
+                                    <img src="images/tn/od3tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors4.jpg" data-lightbox-gallery="team-portfolio" title="The opulent atrium of the Shiroi Koibito Park (Shiroi Koibito Factory, Hokkaido, Japan).">
+                                    <img src="images/tn/od4tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors5.jpg" title="The high-rise buildings block the morning sun from the street (San Francisco, CA)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/od5tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal7.jpg" data-lightbox-gallery="team-portfolio" title="Seals being playful with each other (Nagoya Aquarium, Nagoya, Japan).">
+                                    <img src="images/tn/an7tn.jpg" alt="Click to Enlarge1">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal8.jpg" data-lightbox-gallery="team-portfolio" title="&ldquo;It&#39;s Monday, I don&#39;t want to get up.&rdquo; (San Diego Zoo, San Diego, CA)">
+                                    <img src="images/tn/an8tn.jpg" alt="Click to Enlarge5">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal9.jpg" title="Insects mating on the edge of a cucumber plant leaf (Gifu, Japan)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/an9tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                          <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors6.jpg" data-lightbox-gallery="team-portfolio" title="Visitors are undeterred from the Stonehenge on this rainy summer day (Amesbury, Wiltshire, United Kingdom).">
+                                    <img src="images/tn/od6tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors7.jpg" data-lightbox-gallery="team-portfolio" title="The first sunrise of the year (2016), as viewed from Indian Rock Park (Berkeley, CA).">
+                                    <img src="images/tn/od7tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors8.jpg" title="Imagining what ski jumpers see, but without snow (Okurayama Jump Stadium, Chuo-ku, Sapporo, Hokkaido, Japan).">
+                                    <img src="images/tn/od8tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal10.jpg" data-lightbox-gallery="team-portfolio" title="A polar bear is tired of receiving attention all day long (San Diego Zoo, San Diego, CA).">
+                                    <img src="images/tn/an10tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal11.jpg" data-lightbox-gallery="team-portfolio" title="A pair of bonobos gaze at each other in adoration (San Diego Zoo, San Diego, CA).">
+                                    <img src="images/tn/an11tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal12.jpg" title="A gorilla contemplates its life in captivity (San Diego Zoo, San Diego, CA)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/an12tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal13.jpg" data-lightbox-gallery="team-portfolio" title="A young chimpanzee plays with its food dish (San Diego Zoo, San Diego, CA).">
+                                    <img src="images/tn/an13tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal14.jpg" data-lightbox-gallery="team-portfolio" title="&ldquo;Follow me, we can escape this way.&rdquo; (Maruyama Zoo, Chuo-ku, Sapporo, Hokkaido, Japan)">
+                                    <img src="images/tn/an14tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-xs-6 portfolio-item animals mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/animal15.jpg" title="Two turtles bask in the warmth of their enclosure (San Diego Zoo, San Diego, CA)." data-lightbox-gallery="team-portfolio">
+                                    <img src="images/tn/an15tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row portfolioContainer  text-center">
+                            <div class="col-md-4 col-xs-6 portfolio-item urban mix_all" style="display: inline-block;  opacity: 1;">
+                                <a class="popup" href="images/full/outdoors9.jpg" data-lightbox-gallery="team-portfolio" title="A rainy summer's day in Bristol (Bristol, United Kingdom).">
+                                    <img src="images/tn/od9tn.jpg" alt="Click to Enlarge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END PORTFOLIO -->
+        </div>
+    </div>
 
-	<section class="main clearfix">
-		<div class="work">
-				<img src="img/landing_page.png" class="media" alt=""/>
-		</div> 
-    </section>
-</body>
-</html>
+
+    <!-- Back to top -->
+    <div id="backtotop" style="display: none;">       
+        <a class="to-top-btn sscroll" href="#home"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+
+    <!-- Library Scripts -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/less.min.js"></script>    
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.preloader.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.sudoslider.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.backtotop.js"></script>
+    <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="js/retina.min.js"></script>
+   
+    <script src="js/main.js"></script>
+
+
+
+</body></html>
